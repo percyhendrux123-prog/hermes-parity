@@ -1,0 +1,2 @@
+{"name": "a_plain_chat", "platform": "cli", "model": "anthropic/claude-sonnet-4.5", "enabled_toolsets": "platform",
+ "about": "Synthetic. One user message, the model answers in text, no tools. Uses the stock cli toolsets so Mode A covers the full stock tool surface."}

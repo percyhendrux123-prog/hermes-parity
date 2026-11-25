@@ -1,0 +1,1 @@
+{"name": "k1_canary", "platform": "cli", "model": "synthetic/model", "enabled_toolsets": ["file"]}

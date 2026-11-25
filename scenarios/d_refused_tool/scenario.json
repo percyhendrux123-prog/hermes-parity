@@ -1,0 +1,2 @@
+{"name": "d_refused_tool", "platform": "cli", "model": "anthropic/claude-sonnet-4.5", "enabled_toolsets": ["file"],
+ "about": "Synthetic. The model asks for `terminal`, which is not in the enabled toolsets, so Hermes must refuse it; the model then answers in text."}

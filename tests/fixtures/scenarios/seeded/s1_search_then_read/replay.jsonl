@@ -1,0 +1,6 @@
+{"type": "user", "content": "Find the orbit note and read it."}
+{"type": "reply", "content": null, "tool_calls": [{"id": "call_1", "name": "search_files", "arguments": {"pattern": "orbit"}}]}
+{"type": "tool_result", "tool": "search_files", "result": {"matches": [{"path": "space.md", "line": 1}]}}
+{"type": "reply", "content": null, "tool_calls": [{"id": "call_2", "name": "read_file", "arguments": {"path": "space.md"}}]}
+{"type": "tool_result", "tool": "read_file", "result": {"content": "1|The orbit is stable.", "total_lines": 1}}
+{"type": "reply", "content": "space.md says the orbit is stable."}

@@ -1,0 +1,2 @@
+{"type": "user", "content": "In one sentence, what is a checkpoint in a long-running job?"}
+{"type": "reply", "content": "A checkpoint is a saved snapshot of a job's state that lets it resume from that point instead of starting over."}

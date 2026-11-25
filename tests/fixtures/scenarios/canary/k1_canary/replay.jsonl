@@ -1,0 +1,4 @@
+{"type": "user", "content": "Read the file named PARITYCANARY7Q3ZX9 please."}
+{"type": "reply", "content": null, "tool_calls": [{"id": "call_k1", "name": "read_file", "arguments": {"path": "notes/PARITYCANARY7Q3ZX9.txt"}}]}
+{"type": "tool_result", "tool": "read_file", "result": {"content": "1|secret value PARITYCANARY7Q3ZX9", "total_lines": 1, "PARITYCANARY7Q3ZX9": "as a key too"}}
+{"type": "reply", "content": "Done."}

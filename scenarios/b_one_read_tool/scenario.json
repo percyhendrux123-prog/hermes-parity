@@ -1,0 +1,2 @@
+{"name": "b_one_read_tool", "platform": "cli", "model": "anthropic/claude-sonnet-4.5", "enabled_toolsets": ["file"],
+ "about": "Synthetic. The model makes one read-only call (read_file), gets a stubbed result, then answers."}

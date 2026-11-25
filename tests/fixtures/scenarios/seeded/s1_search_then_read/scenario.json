@@ -1,0 +1,1 @@
+{"name": "s1_search_then_read", "platform": "cli", "model": "synthetic/model", "enabled_toolsets": ["file"]}

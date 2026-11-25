@@ -1,0 +1,2 @@
+{"name": "c_two_tools_sequence", "platform": "cli", "model": "anthropic/claude-sonnet-4.5", "enabled_toolsets": ["file"],
+ "about": "Synthetic. Two tool calls in sequence (search_files, then read_file on the hit), then a text answer."}

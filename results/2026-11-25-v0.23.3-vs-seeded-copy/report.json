@@ -1,0 +1,239 @@
+{
+  "baseline": null,
+  "fingerprints": 3,
+  "groups": [
+    {
+      "change": "changed",
+      "count": 12,
+      "delta_bucket": "-1",
+      "example_delta": -1,
+      "example_offset": 368,
+      "fingerprint": "82f4b7a1b96d",
+      "kind": "api_request",
+      "modes": [
+        "A",
+        "B"
+      ],
+      "new_kind": false,
+      "offset_bucket": "2^8",
+      "piece": "system_prompt.section[#]",
+      "pieces": [
+        "system_prompt.section[1]"
+      ],
+      "scenarios": [
+        "a_plain_chat",
+        "b_one_read_tool",
+        "c_two_tools_sequence",
+        "d_refused_tool"
+      ],
+      "summary": "a system prompt section changed: -1 bytes from byte 368 (12x)"
+    },
+    {
+      "change": "changed",
+      "count": 12,
+      "delta_bucket": "0",
+      "example_delta": 0,
+      "example_offset": 783,
+      "fingerprint": "8bff6caba322",
+      "kind": "api_request",
+      "modes": [
+        "A",
+        "B"
+      ],
+      "new_kind": false,
+      "offset_bucket": "2^9",
+      "piece": "tools[read_file].schema",
+      "pieces": [
+        "tools[read_file].schema"
+      ],
+      "scenarios": [
+        "a_plain_chat",
+        "b_one_read_tool",
+        "c_two_tools_sequence",
+        "d_refused_tool"
+      ],
+      "summary": "tool schema for read_file changed: same length from byte 783, same structure (reordered or edited in place) (12x)"
+    },
+    {
+      "change": "changed",
+      "count": 12,
+      "delta_bucket": "-2^8",
+      "example_delta": -357,
+      "example_offset": 24,
+      "fingerprint": "2917c15efca5",
+      "kind": "api_request",
+      "modes": [
+        "A",
+        "B"
+      ],
+      "new_kind": false,
+      "offset_bucket": "2^4",
+      "piece": "tools[search_files].schema",
+      "pieces": [
+        "tools[search_files].schema"
+      ],
+      "scenarios": [
+        "a_plain_chat",
+        "b_one_read_tool",
+        "c_two_tools_sequence",
+        "d_refused_tool"
+      ],
+      "summary": "tool schema for search_files changed: -357 bytes from byte 24, key paths +0/-1 (12x)"
+    }
+  ],
+  "meta": {
+    "modes": [
+      "A",
+      "B"
+    ],
+    "new": {
+      "sha": "unknown",
+      "tree": "old-seeded"
+    },
+    "old": {
+      "sha": "caafe5389ae5",
+      "tree": "old"
+    },
+    "runs": [
+      {
+        "diffs": 3,
+        "mode": "A",
+        "new_api_requests": 1,
+        "new_notes": [],
+        "new_script_exhausted": 0,
+        "new_seconds": 2.84,
+        "new_status": "ok",
+        "new_steps": 1,
+        "old_api_requests": 1,
+        "old_notes": [],
+        "old_script_exhausted": 0,
+        "old_seconds": 2.87,
+        "old_status": "ok",
+        "old_steps": 1,
+        "scenario": "a_plain_chat"
+      },
+      {
+        "diffs": 3,
+        "mode": "B",
+        "new_api_requests": 1,
+        "new_notes": [],
+        "new_script_exhausted": 0,
+        "new_seconds": 2.84,
+        "new_status": "ok",
+        "new_steps": 4,
+        "old_api_requests": 1,
+        "old_notes": [],
+        "old_script_exhausted": 0,
+        "old_seconds": 2.76,
+        "old_status": "ok",
+        "old_steps": 4,
+        "scenario": "a_plain_chat"
+      },
+      {
+        "diffs": 3,
+        "mode": "A",
+        "new_api_requests": 1,
+        "new_notes": [],
+        "new_script_exhausted": 0,
+        "new_seconds": 2.79,
+        "new_status": "ok",
+        "new_steps": 1,
+        "old_api_requests": 1,
+        "old_notes": [],
+        "old_script_exhausted": 0,
+        "old_seconds": 2.73,
+        "old_status": "ok",
+        "old_steps": 1,
+        "scenario": "b_one_read_tool"
+      },
+      {
+        "diffs": 6,
+        "mode": "B",
+        "new_api_requests": 2,
+        "new_notes": [],
+        "new_script_exhausted": 0,
+        "new_seconds": 2.92,
+        "new_status": "ok",
+        "new_steps": 9,
+        "old_api_requests": 2,
+        "old_notes": [],
+        "old_script_exhausted": 0,
+        "old_seconds": 2.77,
+        "old_status": "ok",
+        "old_steps": 9,
+        "scenario": "b_one_read_tool"
+      },
+      {
+        "diffs": 3,
+        "mode": "A",
+        "new_api_requests": 1,
+        "new_notes": [],
+        "new_script_exhausted": 0,
+        "new_seconds": 2.84,
+        "new_status": "ok",
+        "new_steps": 1,
+        "old_api_requests": 1,
+        "old_notes": [],
+        "old_script_exhausted": 0,
+        "old_seconds": 2.75,
+        "old_status": "ok",
+        "old_steps": 1,
+        "scenario": "c_two_tools_sequence"
+      },
+      {
+        "diffs": 9,
+        "mode": "B",
+        "new_api_requests": 3,
+        "new_notes": [],
+        "new_script_exhausted": 0,
+        "new_seconds": 2.88,
+        "new_status": "ok",
+        "new_steps": 14,
+        "old_api_requests": 3,
+        "old_notes": [],
+        "old_script_exhausted": 0,
+        "old_seconds": 2.73,
+        "old_status": "ok",
+        "old_steps": 14,
+        "scenario": "c_two_tools_sequence"
+      },
+      {
+        "diffs": 3,
+        "mode": "A",
+        "new_api_requests": 1,
+        "new_notes": [],
+        "new_script_exhausted": 0,
+        "new_seconds": 2.96,
+        "new_status": "ok",
+        "new_steps": 1,
+        "old_api_requests": 1,
+        "old_notes": [],
+        "old_script_exhausted": 0,
+        "old_seconds": 2.97,
+        "old_status": "ok",
+        "old_steps": 1,
+        "scenario": "d_refused_tool"
+      },
+      {
+        "diffs": 6,
+        "mode": "B",
+        "new_api_requests": 2,
+        "new_notes": [],
+        "new_script_exhausted": 0,
+        "new_seconds": 2.84,
+        "new_status": "ok",
+        "new_steps": 7,
+        "old_api_requests": 2,
+        "old_notes": [],
+        "old_script_exhausted": 0,
+        "old_seconds": 2.8,
+        "old_status": "ok",
+        "old_steps": 7,
+        "scenario": "d_refused_tool"
+      }
+    ],
+    "tool": "hermes-parity",
+    "version": "0.1.0"
+  },
+  "total_diffs": 36
+}
