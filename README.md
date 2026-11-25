@@ -12,8 +12,8 @@ hundreds.
 The method is Anthropic's, from their write-up on moving the Messages API from Python to Rust:
 run the model once, replay its output to both versions, compare at checkpoints, keep difference
 records with no content, group them by fingerprint, and let people decide on fixes.
-Source: <https://www.anthropic.com/research/migrating-api-to-rust> (saved copy:
-`spec/anthropic-rust-migration-post.md`). Spec for this repo: `spec/SPEC.md`.
+Source: <https://www.anthropic.com/research/migrating-api-to-rust>.
+Spec for this repo: `spec/SPEC.md`.
 
 Name note: the Hermes catalog already has a plugin called `shadow` (salch-cred). It compares the
 answers of two *models*. This tool compares two *Hermes versions*, and it is not called "shadow".

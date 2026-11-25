@@ -3,7 +3,7 @@
 Specification only, not dataset input. No client data anywhere in this repo or its fixtures.
 
 ## Problem
-Before updating Hermes Agent (old tree -> new tree), the owner wants proof of what changes in how agents ACT, not just that tests pass. LLM output varies run to run, so classic shadow-diff tools (GitHub Scientist, Diffy) don't work: they treat varying output as noise and hide real bugs along with it. Anthropic's method (spec/anthropic-rust-migration-post.md): run the model ONCE and feed the same model output to both versions; compare at checkpoints; keep content-free difference records; group them by fingerprint; humans gate fixes.
+Before updating Hermes Agent (old tree -> new tree), the owner wants proof of what changes in how agents ACT, not just that tests pass. LLM output varies run to run, so classic shadow-diff tools (GitHub Scientist, Diffy) don't work: they treat varying output as noise and hide real bugs along with it. Anthropic's method (https://www.anthropic.com/research/migrating-api-to-rust): run the model ONCE and feed the same model output to both versions; compare at checkpoints; keep content-free difference records; group them by fingerprint; humans gate fixes.
 
 ## v0 scope
 1. Recorder (Hermes plugin, observer-only, fails open). It uses the documented observer hooks (spec/hermes-observer-hooks.md): pre_api_request / post_api_request / pre_tool_call / post_tool_call, keyed by turn_id and tool_call_id. It writes one JSONL checkpoint per step: kind, tool name, a canonical hash and length of the args and of the result, status, and the stable shape (sorted key paths). Raw text is OFF by default. It records the model replies needed for replay into a separate local file the owner controls; that file never enters reports.
